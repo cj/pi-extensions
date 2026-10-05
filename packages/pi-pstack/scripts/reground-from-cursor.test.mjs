@@ -61,10 +61,10 @@ test("plan dry-run shape against live trees", () => {
 	assert.ok(!writeRels.has("skills/setup-pstack/SKILL.md"));
 	assert.ok(!writeRels.has("skills/deslop/SKILL.md"));
 
-	assert.equal(planned.counts.total, 47);
+	assert.equal(planned.counts.total, 50);
 	assert.equal(planned.counts.discoverable, 4);
-	assert.equal(planned.counts.hidden, 43);
-	assert.equal(planned.counts.principles, 23);
+	assert.equal(planned.counts.hidden, 46);
+	assert.equal(planned.counts.principles, 24);
 	assert.equal(planned.counts.playbooks, 23);
 
 	const catalog = readFileSync(join(TO, "extensions/pstack/skill-catalog.test.ts"), "utf8");
